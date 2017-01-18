@@ -1,4 +1,14 @@
 body {
-    /* downloaded from https://subtlepatterns.com/934/ */
-    background-image: url("darkdenim2x.png")
+    background-image: url("darkdenim3.png"); /* downloaded from https://subtlepatterns.com/934/ */
+    font-family: Helvetica,Tahoma, Verdana, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+h1, p {
+    color: #ffffff;
+    text-align:center;
+}
+
+.letterSpace {
+    letter-spacing: 3px;
 }
