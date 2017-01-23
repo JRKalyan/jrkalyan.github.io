@@ -1,14 +1,122 @@
 body {
     background-image: url("darkdenim3.png"); /* downloaded from https://subtlepatterns.com/934/ */
+    background-attachment: fixed;
     font-family: Helvetica,Tahoma, Verdana, Helvetica, sans-serif;
-    font-size: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    
 }
 
-h1, p {
-    color: #ffffff;
-    text-align:center;
+p {
+    color: white;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+img {
+    margin: 0 1em;
+}
+
+h1 {
+    font-size: 4em;
+    color: white;
+}
+
+h3 {
+    text-align: left;
+}
+
+a {
+    color: #b2b2b2;
+}
+
+a:hover {
+    color: #efefef;
+}
+
+article.skills td:first-child,article.skills th:first-child {
+    border-right: solid 2px;
+}
+
+article.skills th {
+    border-bottom: solid 2px;
+}
+
+td, th {
+    padding: 0.2em 0.5em;
+    width: 50%;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 1em 0;
+}
+
+.tableContent {
+    color: white;
 }
 
 .letterSpace {
-    letter-spacing: 3px;
+    letter-spacing: 0.2em;
+}
+
+.about {
+    border: 3px solid #4cb4ff;
+    color: #4cb4ff;
+}
+
+.skills {
+    border: 3px solid #fff34c;
+    color: #fff34c;
+}
+
+.projects {
+    border: 3px solid #ff4f4c;
+    color: #ff4f4c;
+}
+
+.contact {
+    border: 3px solid #4cff52;
+    color: #4cff52;
+}
+
+.block {
+    display: inline-block;
+    overflow: hidden;
+    margin:1em 1em;
+    width: 70%;
+    min-width: 25em;
+    min-height: 100%;
+    vertical-align:text-top;
+    word-wrap: break-word;
+    padding: 2%
+}
+
+.icons {
+    vertical-align: middle;
+    height: 30px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.contact a, li {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #4cff52;
 }

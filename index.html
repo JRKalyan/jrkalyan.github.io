@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>John's Portfolio</title>
-
+        <title>John Kalyan</title>
         <meta charset="utf-8">
         <meta name="description" content="A showcase for John Kalyan's work">
-        
+        <meta name="language" content="English">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
 
     <body>
+        <header>
+            <h1 class="letterSpace">JOHN KALYAN</h1>
+        </header>
 
-        <h1 class="letterSpace">PORTFOLIO</h1>
-        <p>This is a work in progress!</p>
+        <main>
+
+            <article class="about block">
+                <h2>ABOUT ME</h2>
+                <img src="portrait.png" height="200px" align="right">
+                <p>Hello! I am a computer science student at the University of Waterloo currently enrolled in my second (1B) term. I was born in Fort McMurray, Alberta, but I live in Red Deer, Alberta when I am not living in Waterloo. I like solving puzzles, I like math, and I love to learn! Although I'm just getting started, I have a passion for my program and my hobbies and hope to constantly improve.</p>
+            </article>
+
+            <article class="skills block">
+                <h2>SKILLS</h2>
+
+                <table>
+                    <tr>
+                        <th><span class="tableContent">Familiar With</span></th>
+                        <th><span class="tableContent">Learning</span></th>
+                    </tr>
+                    <tr>
+                        <td><span class="tableContent">HTML</span></td>
+                        <td><span class="tableContent">C Programming</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="tableContent">CSS</span></td>
+                        <td><span class="tableContent">SQL</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="tableContent">Git / Github</span></td>
+                        <td><span class="tableContent">JavaScript</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="tableContent">Racket Programming</span></td>
+                        <td><span class="tableContent"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="tableContent">Adobe Photoshop</span></td>
+                        <td><span class="tableContent"></span></td>
+                    <tr>
+                        <td><span class="tableContent">Adobe Premiere</span></td>
+                        <td><span class="tableContent"></span></td>
+                    </tr>
+                    </tr>
+
+                    
+                </table>
+            </article>
+
+            <article class="projects block">
+                <h2>PROJECTS</h2>
+                <section class="project">
+                    <h3>UWaterloo Food Services Daily Menu</h3>
+                    <p>The UWaterloo Food Services Menu that I developed is a Racket program that returns the lunch and dinner options that are being offered by the residence cafeterias at UWaterloo. The program takes user input to decide which restaurant's menu you want to look at, then uses the UWaterloo API to retrieve that information. The information is then parsed for the current day's menu which is then formatted and displayed. <a href="https://github.com/JRKalyan/foodservices-menu" title="uwaterloo food services menu" target="_blank">Click Here</a> to visit this repository on Github.</p>
+                </section>
+                <section class="project">
+                    <h3>My Github Profile</h3>
+                    <p>You can visit my Github profile to see the repositories and code for all of my projects, including this one! <a href="https://github.com/JRKalyan" title="JRKalyan's Github" target="_blank">Click Here</a> to visit my profile.</p>
+                </section>
+            </article>
+
+            <article class="contact block">
+                <h2>CONTACT</h2>
+
+                <ul>
+                    <li><a href="https://github.com/jrkalyan" target="_blank" title="github">Github.com/JRKalyan<img src="github.png" alt="github icon" class="icons"></a></li>
+                    <li><a href="mailto:jkalyan@uwaterloo.ca">jkalyan@uwaterloo.ca<img src="email.png" alt="github icon" class="icons"></a></li>
+                    <li>587-876-6873<img src="phone.png" alt="github icon" class="icons"></li>
+                </ul>
+            </article>
+
+        </main>
 
     </body>
 </html>
