@@ -2,7 +2,6 @@ body {
     background-image: url("images/darkdenim3.png"); /* downloaded from https://subtlepatterns.com/934/ */
     background-attachment: fixed;
     font-family: Helvetica,Tahoma, Verdana, Helvetica, sans-serif;
-    width: 90%;
     margin: 0 auto;
     text-align: center;
     
@@ -95,12 +94,13 @@ li {
     display: inline-block;
     overflow: hidden;
     margin:1em 1em;
-    width: 70%;
-    min-width: 25em;
+    width: 50%;
+    min-width: 20em;
+    max-width: 50em;
     min-height: 100%;
-    vertical-align:text-top;
+    vertical-align: text-top;
     word-wrap: break-word;
-    padding: 2%
+    padding: 2%;
 }
 
 .icons {
