@@ -1,8 +1,25 @@
-// js should alter the style on load so without js there is still functionality
+var articleIndex = 0;
+var articles = undefined;
 
 $("document").ready(function() {
-    // code going to go here
-    // first I need to reset the style or I can do that above?
-    
+
+    // PREPPING STYLE (setting if js enabled) -----------------------
+
+    $("body").css("overflow", "hidden");
+
+    $(".block").css({
+        //"position": "absolute",
+        "top": "150%",
+    });
+
+    $("#pickSection").css("visibility", "visible");
+
+    // --------------------------------------------------------------
+
+    articles = document.getElementsByClassName("block");
+
+
+
+
 
 });

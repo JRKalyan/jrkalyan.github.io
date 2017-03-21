@@ -7,7 +7,7 @@ body {
     
 }
 
-p {
+.block p {
     color: white;
     text-align: left;
     font-size: 1em;
@@ -19,8 +19,9 @@ img {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     color: white;
+    margin: 0.1em;
 }
 
 h3 {
@@ -94,11 +95,10 @@ li {
     display: inline-block;
     overflow: hidden;
     margin:1em 1em;
-    width: 50%;
+    width: 60%;
     min-width: 20em;
     max-width: 50em;
     min-height: 100%;
-    vertical-align: text-top;
     word-wrap: break-word;
     padding: 2%;
 }
@@ -119,4 +119,36 @@ li {
 
 .contact a:hover {
     color: #4cff52;
+}
+
+#pickSection {
+    visibility: hidden;
+}
+
+.navButtons {
+    border: 5px solid red;
+    display: inline-block;
+    width: 5em;
+    height: 2em;
+    margin: 0 5%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#about {
+    border: 3px solid #4cb4ff;
+}
+
+#skills {
+    border: 3px solid #fff34c;
+}
+
+#projects {
+    border: 3px solid #ff4f4c;
+
+}
+
+#contact {
+    border: 3px solid #4cff52;
+
 }
