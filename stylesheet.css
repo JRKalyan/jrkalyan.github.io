@@ -4,7 +4,12 @@ body {
     font-family: Helvetica,Tahoma, Verdana, Helvetica, sans-serif;
     margin: 0 auto;
     text-align: center;
+    height: 100%;
     
+}
+
+p {
+    font-size: 1.2em;
 }
 
 .block p {
@@ -21,7 +26,7 @@ img {
 h1 {
     font-size: 3.5em;
     color: white;
-    margin: 0.1em;
+    margin: 0.2em;
 }
 
 h3 {
@@ -94,13 +99,13 @@ li {
 .block {
     display: inline-block;
     overflow: hidden;
-    margin:1em 1em;
+    margin 0 auto;
     width: 60%;
-    min-width: 20em;
-    max-width: 50em;
-    min-height: 100%;
     word-wrap: break-word;
-    padding: 2%;
+}
+
+.block * {
+    margin: 10px;
 }
 
 .icons {
@@ -123,32 +128,54 @@ li {
 
 #pickSection {
     visibility: hidden;
+    vertical-align: text-top;
 }
 
 .navButtons {
-    border: 5px solid red;
     display: inline-block;
-    width: 5em;
-    height: 2em;
-    margin: 0 5%;
+    margin: 0 2%;
+    width: 5.5em;
     overflow: hidden;
-    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.navButtons:hover {
+    text-decoration: overline;
 }
 
 #about {
-    border: 3px solid #4cb4ff;
+    color: #4cb4ff;
 }
 
 #skills {
-    border: 3px solid #fff34c;
+    color: #fff34c;
 }
 
 #projects {
-    border: 3px solid #ff4f4c;
+    color: #ff4f4c;
 
 }
 
 #contact {
-    border: 3px solid #4cff52;
+    color: #4cff52;
 
 }
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+main {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 1em;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+}
+
+/** I NEED TO USE THE OVERFLOW PROPERLY SO THE SITE DOESNT CUT OFF ON TOO SHORT SCREENSS
+BUT IN ORDER FOR THAT TO HAPPEN I NEED TO MAKE THE EHIGHT OF THE MAIN/CONTAINER act properly **/

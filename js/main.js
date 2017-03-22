@@ -5,11 +5,13 @@ $("document").ready(function() {
 
     // PREPPING STYLE (setting if js enabled) -----------------------
 
-    $("body").css("overflow", "hidden");
+    $("#container").css("overflow", "hidden");
 
     $(".block").css({
-        //"position": "absolute",
+        "position": "absolute",
         "top": "150%",
+        "left": "0px",
+        "margin-left": "20%",
     });
 
     $("#pickSection").css("visibility", "visible");
@@ -17,6 +19,14 @@ $("document").ready(function() {
     // --------------------------------------------------------------
 
     articles = document.getElementsByClassName("block");
+
+    $(".navButtons").click(function(){
+        $(".about").animate({
+            top: '0%',
+
+    });
+        console.log("hello");
+    })
 
 
 
