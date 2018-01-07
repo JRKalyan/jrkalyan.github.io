@@ -1,43 +1,61 @@
 var currentArt = 0;
 
 function changeArt(index) {
-    if (index != currentArt) {
-        $(".block:eq(" + index + ")").animate({top: '10%'}, 500);
-        $(".block:eq(" + currentArt + ")").animate({left: '100%'}, 400, function() {
-            $(this).css({
-                "top": "100%",
-                "left": "0%"
-            })
-        });
-        currentArt = index;
-    }
-}
-
-$("document").ready(function() {
-
-    // PREPPING STYLE (setting if js enabled) -----------------------
-
-    $("#container").css("overflow", "hidden");
-
-    $(".block").css({
-        "position": "absolute",
-        "top": "100%",
-        "left": "0px",
-        "margin-left": "15%",
+  if ((index != currentArt)) {
+    $(".block:eq(" + index + ")").css({
+      "height": "auto",
     });
 
-    $(".about").css({
-        "top": "10%"
-    })
+    var indexHeight = $(".block:eq(" + index + ")").height();
 
-    $("#pickSection").css("visibility", "visible");
+    $("#spacer").css({
+      "height": indexHeight + 50,
+    });
 
-    // --------------------------------------------------------------
+    $(".block:eq(" + index + ")").animate(
+      {
+        height: indexHeight,
+        left: '15%',
+      },
+      500);
 
-    document.getElementById("about").onclick = function() {changeArt(0);};
-    document.getElementById("projects").onclick = function() {changeArt(2);};
-    document.getElementById("skills").onclick = function() {changeArt(1);};
-    document.getElementById("contact").onclick = function() {changeArt(3);};
+    $(".block:eq(" + currentArt + ")").animate({ left: '100%' }, 200, function () {
+      $(this).css({
+        "left": "-100%",
+        "height": "0px",
+      })
+    });
+    currentArt = index;
+  }
+}
+
+$("document").ready(function () {
+
+  // PREPPING STYLE (setting if js enabled) -----------------------
+
+  $("#container").css("overflow", "hidden");
+  var headerHeight = $("#name").height() + $("#pickSection").height() + 50;
+
+  $(".block").css({
+    "position": "absolute",
+    "top": headerHeight,
+    "left": "-100%",
+    "height": '0px'
+  });
+
+  $(".about").css({
+    "height": 'auto',
+    "left": "15%"
+  })
+
+  $("#pickSection").css("visibility", "visible");
+
+  // --------------------------------------------------------------
+
+  document.getElementById("about").onclick = function () { changeArt(0); };
+  document.getElementById("skills").onclick = function () { changeArt(1); };
+  document.getElementById("projects").onclick = function () { changeArt(2); };
+  document.getElementById("contact").onclick = function () { changeArt(3); };
 
 
 });
