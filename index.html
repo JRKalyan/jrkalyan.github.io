@@ -7,169 +7,184 @@
     <meta name="language" content="English">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
-
+  <!-- TODO - put in a contact section -->
   <body>
     <header>
-      <h1 id="name" class="letterSpace">JOHN KALYAN</h1>
+      <h1>John Kalyan</h1>
+      <p id="email">john.r.kalyan@gmail.com</p>
     </header>
 
-    <nav id="pickSection">
-      <p id="about" class="navButtons">ABOUT</p>
-      <p id="skills" class="navButtons">SKILLS</p>
-      <p id="projects" class="navButtons">PROJECTS</p>
-      <p id="contact" class="navButtons">CONTACT</p>
-    </nav>
-
     <main>
-
-      <div id="spacer"></div>
-
-      <div id="container">
-        <article class="about block">
-          <h2>ABOUT ME</h2>
-          <img src="resources/portrait.png" height="200" align="right">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#hobbies">Hobbies</a>
+      </nav>
+      <div class="section" id="about">
+        <h2>About Me</h2>
+        <img src="resources/portrait.png" height="200" align="right">
+        <p>
+          Hello! I am a computer science student at the University of
+          Waterloo in my third year. I love computer science and math
+          and have a passion for developing software that has an
+          impact on other people. 
+          <br/>
+          <br/>
+          I have worked as a developer of
+          commercial software, but I am interested in many facets 
+          of computer science. From developing games to research, 
+          there is a lot more that I would like to explore.
+          <br/>
+          <br/>
+          I love creating things, and I love to learn new tools to
+          help me do so. As a result, I am comfortable being put
+          into situations where I have to overcome a learning curve
+          in order to perform well.
+        </p>
+      </div>
+      <div id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <h3>Source Control</h3> 
+            <ul>
+              <li><b>Git:</b> Work experience with GitLab and personal GitHub experience</li>
+              <li><b>Perforce:</b> Work Experience</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Programming Languages</h3>
+            <ul>
+              <li><b>C: </b>In-class experience (CS136, CS350, CS341)</li>
+              <li><b>C++: </b>Project experience (Affign) and in-class experience (CS246, CS240)</li>
+              <li><b>C#: </b>Work Experience</li>
+              <li><b>Rust: </b>Project experience (Inventorium)</li>
+              <li><b>Racket: </b>Project experience (WLM Compiler, UW Menu) and in-class experience
+                (CS135, CS241)</li>
+              <li><b>Rust: </b>Project experience (Inventorium)</li>
+              <li><b>HTML, CSS: </b>Project experience (This website!)</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Development Tools/Frameworks/Libraries</h3>
+            <ul>
+              <li><b>WPF: </b>Work Experience</li>
+              <li><b>Bash Scripting: </b>Personal Unix use and in-class experience (CS246)</li>
+              <li><b>OpenCV: </b>Project experience (Affign)</li>
+              <li><b>wxWidgets: </b>Project experience (Affign)</li>
+              <li><b>ggez: </b>Project Experience (Inventorium)</li>
+              <li><b>CMake: </b>Project Experience (Affign)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="section">
+          <h3>Affign</h3>
+          <img src="resources/affignexample.png" height="250" align="right">
           <p>
-            Hello! I am a computer science student at the University of 
-            Waterloo currently finishing up my second year. I'm loving
-            math and computer science and have a passion to develop
-            software that can help other people and make an impact.
+            Affign is a desktop application that uses facial landmark
+            detection to automatically align a sequence of images
+            that contain a human face. It is useful for 'photo-a-day'
+            projects like mine, featured below. The first version allowed users
+            to run input images through Affign using an intuitive GUI that
+            was implemented in wxWidgets, as pictured to the right. 
+            The current version is a command line tool instead, and was
+            refactored to only rely on OpenCV. The aligned
+            images can be output in video or various image formats,
+            ultimately producing a smoother effect. Affign makes it
+            incredibly easy to align large sets of images that are
+            typical in photo-a-day projects. The source code,
+            release files and wiki are available on the
+            <a href="https://github.com/JRKalyan/affign" title="Affign repository" target="_blank">Github page.</a>
+            The project is built in C++ using OpenCV for face
+            detection/landmarking and image manipulation.
           </p>
-        </article>
 
-        <article class="skills block">
-          <h2>SKILLS</h2>
-
+          <!-- TODO - change to gif for support on all browsers -->
+          <table id="videoExample">
+            <tr>
+              <td>
+                <p>
+                  A small section of my photo-a-day project
+                  before alignment
+                </p>
+              </td>
+              <td>After alignment with Affign</td>
+            </tr>
+            <tr>
+              <td>
+                <img height="240" src="resources/ujohn.gif"/>
+              </td>
+              <td>
+                <img height="240" src="resources/ajohn.gif"/>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="section">
+          <h3>Inventorium</h3>
+          <img src="resources/inventorium.jpg" height="250" align="right">
+          <p>Inventorium is my game created in under 48 hours for Ludum Dare 42 (international)
+            game jam. I
+            used the opportunity to do my first real project in Rust and used the ggez game
+            engine. Unfortunately I had to restart on the final day and only ended up with 12
+            hours to complete the game. I decided to create a simple arcade style game with
+            very simple graphics due to the time constraints. I managed to finish 506th overall
+            out of over 3000 submitted games, which is lower than I would have liked. I did better
+            in the "theme" and "fun" categories at rank 153 and 269 respectively.
+            <br />
+            <br />
+            The theme for the jam was "running out of space." The game consists of a simple arena
+            with coins to collect for points that spawn enemies and give you ammo. Getting hit
+            by an enemy or missing a shot will shrink the walls inwards until the game ends at
+            zero area. Hitting enemies and getting coins increases the score, and the goal is
+            to maximize your score.
+            <br />
+            <br />
+            The experience was quite fun, and I intend to continue participating in Ludum
+            Dare and other game jams in the future. The game is on GitHub with source and
+            binaries available <a href="https://github.com/JRKalyan/inventorium" title="Inventorium repository" target="_blank">here.</a>
+          </p>
+        </div>
+      </div>
+      <div id="work" class="section">
+        <h2>Work</h2>
+        <div class="section">
+          <h3>Nuance Communications</h3>
           <table>
             <tr>
-              <th><span class="tableContent">Proficient With</span></th>
-              <th><span class="tableContent">Prior Experience With</span></th>
+              <td>May 1, 2018 - August 24, 2018</td>
+              <td>Software Developer Co&#x2011op</td>
+              <td>I worked at Nuance's Waterloo Office as a software developer for a co-op
+                term. I was initially working as a backend developer but took on the
+                responsibilities of a full stack developer as we lost resources on the team.
+                We developed in C# using WPF as our UI framework. I learned an enormous amount
+                during this work term and greatly enjoyed the team and company culture.
+              </td>
             </tr>
-            <tr>
-              <td><span class="tableContent">C++</span></td>
-              <td><span class="tableContent">C</span></td>
-            </tr>
-            <tr>
-              <td><span class="tableContent">HTML</span></td>
-              <td><span class="tableContent">JavaScript</span></td>
-            </tr>
-            <tr>
-              <td><span class="tableContent">CSS</span></td>
-              <td><span class="tableContent">jQuery</span></td>
-            </tr>
-            <tr>
-              <td><span class="tableContent">Git</span></td>
-              <td><span class="tableContent"></span></td>
-            </tr>
-            <tr>
-              <td><span class="tableContent">Racket</span></td>
-              <td><span class="tableContent"></span></td>
-            </tr>
-            <tr>
-              <td><span class="tableContent">Adobe Photoshop</span></td>
-              <td><span class="tableContent"></span></td>
-            <tr>
-              <td><span class="tableContent">Adobe Premiere</span></td>
-              <td><span class="tableContent"></span></td>
-            </tr>
-
           </table>
-        </article>
-
-        <article class="projects block">
-          <h2>MY PROJECTS</h2>
-
-          <section class="project">
-            <h3>Affign</h3>
-            <img src="resources/affignexample.png" height="250" align="right">
-            <p>
-              Affign is a desktop application that uses facial landmark
-              detection to automatically align a sequence of images
-              that contain a human face. It is useful for 'photo-a-day'
-              projects like mine, featured below. After running input
-              images through Affign using an intuitive GUI, the aligned
-              images can be output in video or various image formats,
-              ultimately producing a smoother effect. Affign makes it
-              incredibly easy to align large sets of images that are
-              typical in photo-a-day projects. The source code,
-              release files and wiki are available on the
-              <a href="https://github.com/JRKalyan/affign" title="Affign repository" target="_blank">Github page.</a>
-              The project is built in C++ using Dlib for face
-              detection/landmarking, OpenCV for image manipulation,
-              and wxWidgets for the GUI.
-            </p>
-
-            <table id="videoExample" align="center">
-              <tr>
-                <td>
-                  <h4 id="beforeTitle">
-                    A small section of my photo-a-day project
-                    before alignment
-                  </h4>
-                </td>
-                <td><h4 id="beforeTitle">After alignment with Affign</h4></td>
-              </tr>
-              <tr>
-                <td>
-                  <video width="320" height="240" autoplay loop>
-                    <source src="resources/ujohn.mp4" type="video/mp4" />
-                  </video>
-                </td>
-                <td>
-                  <video width="320" height="240" autoplay loop>
-                    <source src="resources/ajohn.mp4" type="video/mp4" />
-                  </video>
-                </td>
-              </tr>
-            </table>
-
-          </section>
-
-          <section class="project">
-            <h3>UWaterloo Food Services Daily Menu</h3>
-            <p>
-              The UWaterloo Food Services Menu that I developed
-              is a Racket program that returns the lunch and dinner
-              options that are being offered by the residence cafeterias
-              at UWaterloo. The program takes user input to decide which
-              restaurant's menu you want to look at, then uses the
-              Uwaterloo API to retrieve that information. The information
-              is then parsed for the current day's menu which is then
-              formatted and displayed.
-              <a href="https://github.com/JRKalyan/foodservices-menu" title="UW menu repository" target="_blank">Click Here</a>
-              to visit the repository on Github.
-            </p>
-          </section>
-
-
-          <section class="project">
-            <h3>My Github Profile</h3>
-            <p>
-              You can visit my Github profile to see the repositories and
-              code for all of my projects, including this website.
-              <a href="https://github.com/JRKalyan" title="JRKalyan's Github" target="_blank">Click Here</a>
-              to visit my profile.
-            </p>
-          </section>
-
-        </article>
-
-        <article class="contact block">
-          <h2>CONTACT / INFO</h2>
-
-          <ul>
-            <li><a href="https://github.com/jrkalyan" target="_blank" title="github">Github.com/JRKalyan<img src="resources/github.png" alt="github icon" class="icons"></a></li>
-            <li><a href="mailto:jkalyan@uwaterloo.ca">jkalyan@uwaterloo.ca<img src="resources/email.png" alt="email icon" class="icons"></a></li>
-            <!-- <li>OBSCURED<img src="resources/phone.png" alt="phone icon" class="icons"></li> -->
-          </ul>
-        </article>
+        </div>
       </div>
-
+      <div id="hobbies" class="section">
+        <h2>Hobbies</h2>
+        <div class="section">
+          <h3>Keyboards</h3>
+          <img src="resources/keyboard.jpg" align="right" height="250"/>
+          <p>I collect <a href="https://en.wikipedia.org/wiki/Keyboard_technology#Mechanical-switch_keyboard" target="_blank">mechanical keyboards</a>
+            and also have started to build my own (pictured on the right). Mechanical
+            keyboards are desired by enthusiast typists and gamers because each key is
+            a separate, physical switch rather than a connected membrane of rubber domes
+            that collapse on many modern keyboards. This system provides a satisfying
+            experience that is ideal for fast typing because with certain switches it is
+            clear exactly when a key is pressed. Mechanical keyboards tend to be more
+            durable and last much longer than membrane keyboards as well.
+          </p>
+        </div>
+      </div>
     </main>
-
-    <footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="js/main.js"></script>
-    </footer>
-
   </body>
 </html>

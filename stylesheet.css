@@ -1,180 +1,52 @@
 body {
-  background-color: azure;
-  background-attachment: fixed;
-  font-family: Helvetica,Tahoma, Verdana, Helvetica, sans-serif;
+  background-color: #e8e8e8;
+  font-family: Helvetica, Tahoma, Verdana, sans-serif;
   margin: 0 auto;
-  text-align: center;
-}
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-p {
-  font-size: 1.2em;
-}
-
-.block p {
+  width: 80%;
   color: darkslategray;
-  text-align: left;
-  font-size: 1em;
-  line-height: 1.7em;
-}
-
-img {
-  margin: 0 1em;
-}
-
-h1 {
-  font-size: 3.5em;
-  color: darkslategray;
-  margin: 0.2em;
-}
-
-h3 {
-  text-align: left;
-}
-
-.projects a {
-  color: #ff4f4c;
-  text-decoration: none;
-}
-
-.projects a:hover {
-  text-decoration: underline;
-}
-
-article.skills td:first-child, article.skills th:first-child {
-  border-right: solid 2px;
-}
-
-article.skills th {
-  border-bottom: solid 2px;
-}
-
-td, th {
-  padding: 0.2em 0.5em;
-  width: 50%;
 }
 
 table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  table-layout: fixed;
+  width: 100%;
 }
 
-.skills table {
-  margin: 0 auto 10px;
+h1 {
+  text-align: center
 }
 
-ul {
-  list-style-type: none;
+h2 {
+  border-bottom: solid 2px darkslategray;
 }
 
-li {
-  margin: 1em 0;
-}
-
-.tableContent {
-  color: darkslategray;
-}
-
-.letterSpace {
-  letter-spacing: 0.2em;
-}
-
-.about {
-  background-color: rgba(76, 180, 255, 0.3);
-  border: 3px solid #4cb4ff;
-  color: #4cb4ff;
-}
-
-.skills {
-  background-color: rgba(249, 172, 29, 0.3);
-  border: 3px solid #f9ac1d;
-  color: #f9ac1d;
-}
-
-.projects {
-  background-color: rgba(255, 79, 76, 0.3);
-  border: 3px solid #ff4f4c;
-  color: #ff4f4c;
-}
-
-.contact {
-  background-color: rgba(76, 255, 82, 0.3);
-  border: 3px solid #38d13d;
-  color: #38d13d;
-}
-
-.block {
+.section {
   display: inline-block;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 70%;
-  word-wrap: break-word;
+  width: 100%;
 }
 
-.block * {
-  margin: 10px;
+img {
+  margin: 0 10px 0 10px;
 }
 
-.icons {
-  vertical-align: middle;
-  height: 30px;
+a {
+  color: #559191;
 }
 
-.center {
-  margin: 0 auto;
+nav a {
+  font-size:large;
+  margin: 20px;
 }
 
-.contact a, li {
-  color: darkslategray;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  color: #38d13d;
-}
-
-#pickSection {
-  visibility: hidden;
-  vertical-align: text-top;
-}
-
-.navButtons {
-  display: inline-block;
-  margin: 0 2%;
-  width: 5.5em;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.navButtons:hover {
-  text-decoration: underline;
-}
-
-#about {
-  color: #4cb4ff;
-}
-
-#skills {
-  color: #f9ac1d;
-}
-
-#projects {
-  color: #ff4f4c;
-}
-
-#contact {
-  color: #38d13d;
-}
-
-#spacer {
-  height: 0px;
+nav {
+  width: 100%;
+  text-align: center;
 }
 
 #videoExample {
   margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+#email {
+  text-align: center;
 }
